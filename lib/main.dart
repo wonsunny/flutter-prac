@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Icon(Icons.favorite_border, color: Colors.grey,),
+                            SizedBox(child: IconButton(icon: Icon(Icons.favorite_border),onPressed: (){}, color: Colors.grey,)),
                             Text('4')
                           ],
                         )
