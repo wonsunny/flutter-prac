@@ -11,9 +11,12 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(actions: [Icon(Icons.search),Icon(Icons.menu),Icon(Icons.notifications)], title: Text('아라일동'),
-          backgroundColor: Colors.orange,
-          elevation: 5,
+        appBar: AppBar(title: Text('아라일동'),
+          titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 20),
+          actions: [Icon(Icons.search),Icon(Icons.menu),Icon(Icons.notifications)],
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.black),
+          elevation: 1,
         ),
         body: Container(
             height: 150, padding: EdgeInsets.all(10),
