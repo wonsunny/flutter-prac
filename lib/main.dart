@@ -13,7 +13,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('아라일동'),
           titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 20),
-          actions: [Icon(Icons.search),Icon(Icons.menu),Icon(Icons.notifications)],
+          actions: <Widget>[
+            IconButton(
+                icon: Icon(Icons.search),
+                onPressed:(){}
+            ),
+            IconButton(
+                icon: Icon(Icons.menu),
+                onPressed:(){}
+            ),
+            IconButton(
+                icon: Icon(Icons.notifications),
+                  onPressed:(){}
+            ),
+          ],
           backgroundColor: Colors.white,
           iconTheme: IconThemeData(color: Colors.black),
           elevation: 1,
