@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('아라일동'),
+        appBar: AppBar(title: Text('아라일동 '),
           titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 20),
           actions: <Widget>[
             IconButton(
@@ -61,8 +61,36 @@ class MyApp extends StatelessWidget {
                     ),),
                 )
               ],
-            )
+            ),
+        ),bottomNavigationBar: BottomAppBar(color: Colors.white,height: 50,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+        IconButton(
+            icon: Icon(Icons.home),
+            onPressed:(){}
         ),
+        IconButton(
+            icon: Icon(Icons.article),
+            onPressed:(){}
+        ),
+        IconButton(
+            icon: Icon(Icons.location_on),
+            onPressed:(){}
+        ),
+        IconButton(
+            icon: Icon(Icons.chat),
+            onPressed:(){}
+        ),
+            IconButton(
+                icon: Icon(Icons.person),
+                onPressed:(){}
+            ),
+      ],
+      ),
+      ),
+
+
 
       )
     );
